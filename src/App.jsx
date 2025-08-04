@@ -17,7 +17,7 @@ function App() {
         <header className="p-4 shadow-md">
           <nav className="flex justify-between max-w-4xl mx-auto">
             <h1 className="text-xl font-bold">Jeremiah Barro</h1>
-            <div className="space-x-4">
+            <div className="space-x-4 flex items-center">
               <Link to="/">Home</Link>
               <Link to="/projects">Projects</Link>
               <Link to="/resume">Resume</Link>
