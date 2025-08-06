@@ -17,36 +17,62 @@ function App() {
       <AnimatedCursor
         innerSize={8}
         outerSize={35}
-        color="255, 255, 255"
+        color="75, 255, 165"
         outerAlpha={0.2}
         innerScale={0.7}
         outerScale={2}
       />
 
       <Router>
-        <div className="min-h-screen bg-black text-white font-sans">
-          <header className="p-4 shadow-md">
-            <nav className="flex justify-between max-w-4xl mx-auto">
-              <h1 className="text-xl font-bold">Jeremiah Barro</h1>
-              <div className="space-x-4 flex items-center">
-                <Link to="/">Home</Link>
-                <Link to="/projects">Projects</Link>
-                <Link to="/resume">Resume</Link>
-                <Link to="/contact">Contact</Link>
-              </div>
-            </nav>
-          </header>
+        <div className="relative min-h-screen grainy-bg text-white font-sans">
+          {/* Lines background */}
+          <div className="lines pointer-events-none absolute inset-0 z-0">
+            <div className="max-w-screen-xl mx-auto h-full flex">
+              <div className="flex-1 border-l border-white/20"></div>
+              <div className="flex-1 border-l border-white/20"></div>
+              <div className="flex-1 border-l border-white/20"></div>
+              <div className="flex-1 border-l border-white/20"></div>
+              <div className="flex-1 border-l border-white/20"></div>
+            </div>
+          </div>
 
-          <main className="p-4 max-w-4xl mx-auto">
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/resume" element={<Resume />} />
-              <Route path="/contact" element={<Contact />} />
-            </Routes>
-          </main>
+          {/* Foreground content */}
+          <div className="relative z-10">
+            <header className="p-4 shadow-md">
+              <nav className="flex justify-between max-w-7xl mx-auto">
+                <div className="text-2xl">
+                  <span className="grey-text">Jeremiah</span> Barro
+                </div>
+                <div className="space-x-4 flex items-center">
+                  <Link to="/">Home</Link>
+                  <Link to="/projects">Projects</Link>
+                  <Link to="/resume">Resume</Link>
+                  <Link to="/contact">Contact</Link>
+                </div>
+              </nav>
+            </header>
+
+            <main className="p-4 max-w-6xl mx-auto">
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/projects" element={<Projects />} />
+                <Route path="/resume" element={<Resume />} />
+                <Route path="/contact" element={<Contact />} />
+              </Routes>
+            </main>
+          </div>
         </div>
       </Router>
+      <div className="relative max-w-7xl mx-auto z-10">
+        <div className="absolute bottom-6 text-white/70 font-medium text-md hover:text-accent transition">
+          <a
+            href="mailto:jeremiah@hostelprofessional.com"
+            className="underline"
+          >
+            E: jeremiah@hostelprofessional.com
+          </a>
+        </div>
+      </div>
     </>
   );
 }
