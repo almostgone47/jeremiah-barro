@@ -63,7 +63,7 @@ function App() {
           </div>
         </div>
       </Router>
-      <div className="relative max-w-7xl mx-auto z-10">
+      {/* <div className="relative max-w-7xl mx-auto z-10">
         <div className="absolute bottom-6 text-white/70 font-medium text-md hover:text-accent transition">
           <a
             href="mailto:jeremiah@hostelprofessional.com"
@@ -72,7 +72,12 @@ function App() {
             E: jeremiah@hostelprofessional.com
           </a>
         </div>
-      </div>
+      </div> */}
+      <footer className="text-white py-1 border-t border-white/10">
+        <div className="max-w-7xl mx-auto text-left">
+          <p className="text-sm">© 2025 Jeremiah Barro</p>
+        </div>
+      </footer>
     </>
   );
 }

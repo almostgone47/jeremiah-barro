@@ -39,12 +39,12 @@ body {
   z-index: 0;
 } */
 
-a {
+nav a {
   font-weight: 500;
   color: #ffffff80;
   text-decoration: inherit;
 }
-a:hover {
+nav a:hover {
   color: #fff;
 }
 
@@ -109,6 +109,7 @@ body,
 
 .hero-section {
   position: relative;
+  min-height: 475px;
 }
 
 .headshot-img-container {
@@ -131,5 +132,15 @@ body,
 
 .typed-text strong,
 .green-text {
+  color: #4bffa5;
+}
+
+a {
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: inherit;
+}
+a:hover {
+  font-weight: 600;
   color: #4bffa5;
 }

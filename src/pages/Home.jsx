@@ -2,6 +2,8 @@ import {useEffect, useRef} from 'react';
 import Typed from 'typed.js';
 
 import avatar from '../assets/images/headshot.jpeg';
+import Projects from './Projects';
+import Contact from './Contact';
 
 export default function Home() {
   const el = useRef(null);
@@ -21,18 +23,22 @@ export default function Home() {
   }, []);
 
   return (
-    <section className="hero-section text-center py-20">
-      <div className="headshot-img-container">
-        <img
-          src={avatar}
-          alt="headshot"
-          className="mx-auto w-48 h-48 object-cover grayscale clip-blob headshot-img"
-        />
-      </div>
-      <span
-        ref={el}
-        className="typed-text block text-5xl font-bold text-white-800 min-h-[100px]"
-      ></span>
-    </section>
+    <>
+      <section className="hero-section text-center py-20">
+        <div className="headshot-img-container">
+          <img
+            src={avatar}
+            alt="headshot"
+            className="mx-auto w-48 h-48 object-cover grayscale clip-blob headshot-img"
+          />
+        </div>
+        <span
+          ref={el}
+          className="typed-text block text-5xl font-bold text-white-800 min-h-[100px]"
+        ></span>
+      </section>
+      <Projects />
+      <Contact />
+    </>
   );
 }
