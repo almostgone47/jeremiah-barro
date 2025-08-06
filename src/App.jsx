@@ -45,9 +45,9 @@ function App() {
                 </div>
                 <div className="space-x-4 flex items-center">
                   <Link to="/">Home</Link>
-                  <Link to="/projects">Projects</Link>
+                  {/* <Link to="/projects">Projects</Link> */}
                   <Link to="/resume">Resume</Link>
-                  <Link to="/contact">Contact</Link>
+                  {/* <Link to="/contact">Contact</Link> */}
                 </div>
               </nav>
             </header>
@@ -55,9 +55,9 @@ function App() {
             <main className="p-4 max-w-6xl mx-auto">
               <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/projects" element={<Projects />} />
+                {/* <Route path="/projects" element={<Projects />} /> */}
                 <Route path="/resume" element={<Resume />} />
-                <Route path="/contact" element={<Contact />} />
+                {/* <Route path="/contact" element={<Contact />} /> */}
               </Routes>
             </main>
           </div>
