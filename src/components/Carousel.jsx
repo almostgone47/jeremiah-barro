@@ -22,7 +22,7 @@ export default function Carousel({images}) {
 
       <button
         onClick={prevSlide}
-        className="absolute left-3 top-1/2 transform -translate-y-1/2 bg-black/50 text-white px-3 py-1"
+        className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black/50 text-white px-3 py-1"
       >
         ‹
       </button>

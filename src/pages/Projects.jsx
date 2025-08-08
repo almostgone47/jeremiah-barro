@@ -25,8 +25,10 @@ import transcorp2 from '../assets/images/transcorp2.png';
 import transcorp3 from '../assets/images/transcorp3.png';
 import transcorp4 from '../assets/images/transcorp4.png';
 
-// import ajlucas1 from '../assets/images/ajlucas1.png';
-// import ajlucas2 from '../assets/images/ajlucas2.png';
+import hostelpro1 from '../assets/images/hostelpro1.png';
+import hostelpro2 from '../assets/images/hostelpro2.png';
+import hostelpro3 from '../assets/images/hostelpro3.png';
+import hostelpro4 from '../assets/images/hostelpro4.png';
 
 export default function Projects() {
   return (
@@ -133,13 +135,7 @@ export default function Projects() {
         <p className="text-sm text-gray-300 mb-3">
           Tech: PHP, Laravel, MySQL, Bootstrap
         </p>
-        <Carousel
-          images={[
-            '/images/hostel1.png',
-            '/images/hostel2.png',
-            '/images/hostel3.png',
-          ]}
-        />
+        <Carousel images={[hostelpro1, hostelpro2, hostelpro3, hostelpro4]} />
       </div>
     </section>
   );
