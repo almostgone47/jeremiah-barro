@@ -54,7 +54,7 @@ function App() {
 
             <main className="p-4 max-w-6xl mx-auto">
               <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/my-portfolio" element={<Home />} />
                 {/* <Route path="/projects" element={<Projects />} /> */}
                 <Route path="/resume" element={<Resume />} />
                 {/* <Route path="/contact" element={<Contact />} /> */}
