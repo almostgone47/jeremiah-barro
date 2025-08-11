@@ -63,7 +63,7 @@ function App() {
       </Router>
       <footer className="text-white py-1 border-t border-white/10">
         <div className="max-w-7xl mx-auto text-left">
-          <p className="text-sm">© 2025 Jeremiah Barro</p>
+          <p className="text-sm grey-text">© 2025 Jeremiah Barro</p>
         </div>
       </footer>
     </>
