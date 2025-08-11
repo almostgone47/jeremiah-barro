@@ -63,6 +63,24 @@ export default function Projects() {
         />
       </div>
 
+      {/* AJ Lucas */}
+      <div>
+        <h3 className="text-2xl font-semibold mb-2">AJ Lucas</h3>
+        <p className="text-sm text-gray-400 mb-1">
+          Software Engineer • May 2022 – Jan 2023
+        </p>
+        <p className="mb-2">
+          Built internal HR and equipment portal to centralize resource tracking
+          and reduce admin overhead. Designed reusable components and secure
+          file upload workflows to AWS S3. Helped spec out features directly
+          with HR and ops staff.
+        </p>
+        <p className="text-sm text-gray-300 mb-3">
+          Tech: React, Node.js, MongoDB, AWS S3, Material UI
+        </p>
+        <Carousel images={[ajlucas1, ajlucas2, ajlucas3, ajlucas4, ajlucas5]} />
+      </div>
+
       {/* Yieldly */}
       <div>
         <h3 className="text-2xl font-semibold mb-2">Yieldly</h3>
@@ -82,31 +100,13 @@ export default function Projects() {
         <Carousel images={[yieldly1, yieldly2, yieldly3]} />
       </div>
 
-      {/* AJ Lucas */}
-      <div>
-        <h3 className="text-2xl font-semibold mb-2">AJ Lucas</h3>
-        <p className="text-sm text-gray-400 mb-1">
-          Software Engineer • May 2022 – Jan 2023
-        </p>
-        <p className="mb-2">
-          Built internal HR and equipment portal to centralize resource tracking
-          and reduce admin overhead. Designed reusable components and secure
-          file upload workflows to AWS S3. Helped spec out features directly
-          with HR and ops staff.
-        </p>
-        <p className="text-sm text-gray-300 mb-3">
-          Tech: React, Node.js, MongoDB, AWS S3, Material UI
-        </p>
-        <Carousel images={[ajlucas1, ajlucas2, ajlucas3, ajlucas4, ajlucas5]} />
-      </div>
-
       {/* Transcorp */}
       <div>
         <h3 className="text-2xl font-semibold mb-2">
           Transcorp Logistics Portal
         </h3>
         <p className="text-sm text-gray-400 mb-1">
-          Software Engineer • Dec 2019 – Jan 2021
+          Software Engineer • Dec 2020 – Jan 2021
         </p>
         <p className="mb-2">
           Built and maintained customer-facing logistics apps for Dubai and
@@ -124,7 +124,7 @@ export default function Projects() {
       <div>
         <h3 className="text-2xl font-semibold mb-2">HostelProfessional</h3>
         <p className="text-sm text-gray-400 mb-1">
-          Founder & Full-Stack Developer • Jul 2016 – Dec 2019
+          Founder & Full-Stack Developer • Jul 2016 – Dec 2020
         </p>
         <p className="mb-2">
           Created a SaaS platform from scratch for hostel and hotel operations

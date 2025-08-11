@@ -34,7 +34,7 @@ export default function Resume() {
             </ul>
           </li>
           <li>
-            <strong>Software Engineer</strong>, Transcorp Intl. (Dec 2019 – Jan
+            <strong>Software Engineer</strong>, Transcorp Intl. (Dec 2020 – Jan
             2021)
             <ul className="ml-4 list-disc">
               <li>Maintained logistics apps using React and Node.js</li>
@@ -44,7 +44,7 @@ export default function Resume() {
           </li>
           <li>
             <strong>Founder & Developer</strong>, HostelProfessional (Jul 2016 –
-            Dec 2019)
+            Dec 2020)
             <ul className="ml-4 list-disc">
               <li>Built SaaS hostel management system</li>
               <li>Led design/dev using Bootstrap and Figma</li>
