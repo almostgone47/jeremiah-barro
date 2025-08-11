@@ -37,7 +37,7 @@ export default function Projects() {
       <div>
         <h3 className="text-2xl font-semibold mb-2">Orion Van Gear</h3>
         <p className="text-sm text-gray-400 mb-1">
-          Frontend Developer (Contract) • May–July 2025
+          Frontend Developer • May–July 2025
         </p>
         <p className="mb-2">
           Developed a customized Shopify Hydrogen storefront for a van
