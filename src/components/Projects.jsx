@@ -1,4 +1,4 @@
-import Carousel from '../components/Carousel';
+import Carousel from './Carousel';
 
 import orion1 from '../assets/images/orion1.png';
 import orion2 from '../assets/images/orion2.png';

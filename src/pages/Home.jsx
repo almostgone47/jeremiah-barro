@@ -2,8 +2,8 @@ import {useEffect, useRef} from 'react';
 import Typed from 'typed.js';
 
 import avatar from '../assets/images/headshot.jpeg';
-import Projects from './Projects';
-import Contact from './Contact';
+import Projects from '../components/Projects';
+import Contact from '../components/Contact';
 
 export default function Home() {
   const el = useRef(null);
@@ -16,8 +16,12 @@ export default function Home() {
       typeSpeed: 50,
       backSpeed: 25,
       backDelay: 2500,
-      // loop: true,
+      autoInsertCss: false,
+      isBlinking: false,
     });
+
+    const cursor = document.getElementsByClassName('typed-cursor');
+    cursor[0].style.display = 'none';
 
     return () => typed.destroy();
   }, []);
@@ -29,7 +33,7 @@ export default function Home() {
           <img
             src={avatar}
             alt="headshot"
-            className="mx-auto w-48 h-48 object-cover grayscale clip-blob headshot-img"
+            className="mx-auto w-48 h-48 object-cover grayscale clip-blob headshot-img logo"
           />
         </div>
         <span
