@@ -13,7 +13,7 @@ export default function Carousel({images}) {
   };
 
   return (
-    <div className="relative w-full mx-auto overflow-hidden rounded-md shadow-lg">
+    <div className="relative w-full mx-auto rounded-md shadow-lg">
       <img
         src={images[currentIndex]}
         alt={`Slide ${currentIndex}`}
@@ -22,13 +22,13 @@ export default function Carousel({images}) {
 
       <button
         onClick={prevSlide}
-        className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black/50 text-white px-3 py-1"
+        className="carousel-btn absolute z-2 -left-12 top-1/2 transform -translate-y-1/2 bg-black/50 text-white px-3 py-1"
       >
         ‹
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black/50 text-white px-3 py-1"
+        className="carousel-btn absolute z-2 -right-12 top-1/2 transform -translate-y-1/2 bg-black/50 text-white px-3 py-1"
       >
         ›
       </button>

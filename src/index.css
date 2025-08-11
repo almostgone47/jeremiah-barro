@@ -144,3 +144,16 @@ a:hover {
   font-weight: 600;
   color: #4bffa5;
 }
+
+.carousel-btn {
+  border: 1px solid #4bffa5;
+  color: #4bffa5;
+}
+
+.carousel-btn:hover {
+  border: 1px solid #008a45;
+  color: #008a45;
+}
+
+.contact-section {
+}
